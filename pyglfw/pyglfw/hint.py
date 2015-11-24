@@ -13,9 +13,12 @@ from . import _wrapapi as api
 
 class _HintsBase(object):
     _hint_map_ = {
+        'focused':             api.GLFW_FOCUSED,
         'resizable':           api.GLFW_RESIZABLE,
         'visible':             api.GLFW_VISIBLE,
         'decorated':           api.GLFW_DECORATED,
+        'auto_iconify':        api.GLFW_AUTO_ICONIFY,
+        'floating':            api.GLFW_FLOATING,
         'red_bits':            api.GLFW_RED_BITS,
         'green_bits':          api.GLFW_GREEN_BITS,
         'blue_bits':           api.GLFW_BLUE_BITS,
